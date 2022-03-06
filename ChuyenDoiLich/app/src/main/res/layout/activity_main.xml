@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/textview1"
+        android:layout_height="wrap_content"
+        android:text=" Chuyển đổi năm dương lịch"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:background="#2C8037"
+        />
+
+    <EditText
+        android:id="@+id/edittext1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Năm dương lịch : "
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:backgroundTint="#70706E"
+        android:text="Chuyển đổi">
+
+    </Button>
+
+    <EditText
+        android:id="@+id/edittext2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Năm âm lịch : "
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/textview2"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:textSize="20dp"
+        android:gravity="center"
+        android:background="#2C8037"
+        />
+
+
+</LinearLayout>
