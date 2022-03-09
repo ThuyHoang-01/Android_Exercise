@@ -33,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
             R.drawable.s6, R.drawable.s7, R.drawable.s8, R.drawable.s9, R.drawable.s10,
             R.drawable.sj, R.drawable.sq, R.drawable.sk};
     int count = 0;
+    int mayWin = 0 , nguoiWin = 0 ;
+    int mayHoa = 0, nguoiHoa = 0 ;
+
 
     /*
      * Define Elements
@@ -76,32 +79,33 @@ public class MainActivity extends AppCompatActivity {
                 tv_ketQua1.setText("Kết quả:" + (ketQuaNguoi == 10 ? "Ba tây" : String.valueOf(ketQuaNguoi)));
 
                 // so sánh kết quả 2 người chơi rồi cập nhật ô text của kết quả
-                int ketQuaHienTaiMayWin = Integer.valueOf(et_ketQuaMay.getText().toString());
-                int ketQuaHienTaiNguoiWin = Integer.valueOf(et_ketQuaNguoi.getText().toString());
+
+                // int ketQuaHienTaiMayWin = Integer.valueOf(et_ketQuaMay.getText().toString());
+               // int ketQuaHienTaiNguoiWin = Integer.valueOf(et_ketQuaNguoi.getText().toString());
 
                 if (ketQuaMay < ketQuaNguoi) {
-                    ketQuaHienTaiNguoiWin = ++ketQuaHienTaiNguoiWin;
-                    et_ketQuaNguoi.setText(String.valueOf(ketQuaHienTaiNguoiWin));
+                    nguoiWin++;
+                    et_ketQuaNguoi.setText(String.valueOf(nguoiWin));
                 } else if (ketQuaMay == ketQuaNguoi) {
-                    ketQuaHienTaiNguoiWin = ++ketQuaHienTaiNguoiWin;
-                    ketQuaHienTaiMayWin = ++ketQuaHienTaiMayWin;
-                    et_ketQuaNguoi.setText(String.valueOf(ketQuaHienTaiNguoiWin));
-                    et_ketQuaMay.setText(String.valueOf(ketQuaHienTaiMayWin));
+                    mayHoa++;
+                    nguoiHoa++;
+                    et_ketQuaNguoi.setText(String.valueOf(mayHoa));
+                    et_ketQuaMay.setText(String.valueOf(nguoiHoa));
                 } else {
-                    ketQuaHienTaiMayWin = ++ketQuaHienTaiMayWin;
-                    et_ketQuaMay.setText(String.valueOf(ketQuaHienTaiMayWin));
+                    mayWin++;
+                    et_ketQuaMay.setText(String.valueOf(mayWin));
                 }
 
                 ++count; // tăng số lần chơi lên
                 tv_soLuotChoi.setText(String.valueOf("Số lượt chơi: " + count));
                 if (count == 10) {
-                    if (ketQuaHienTaiMayWin > ketQuaHienTaiNguoiWin) { // so sánh coi thang nao win sau 10 hiệp
+                    if (mayWin > nguoiWin) { // so sánh coi thang nao win sau 10 hiệp
                         Toast.makeText(MainActivity.this, "Máy đã chiến thắng!", Toast.LENGTH_SHORT).show();  // thong bao may win
-                    } else if (ketQuaHienTaiMayWin < ketQuaHienTaiNguoiWin) {
-                        Toast.makeText(MainActivity.this, "Người chơi đã chiến thắng!", Toast.LENGTH_SHORT).show(); // thong bao nguoi win
-                    } else {
-                        Toast.makeText(MainActivity.this, "Hòa!", Toast.LENGTH_SHORT).show(); // thong bao hòa
                     }
+                    else {
+                        Toast.makeText(MainActivity.this, "Người chơi đã chiến thắng!", Toast.LENGTH_SHORT).show(); // thong bao nguoi win
+                    }
+
                     count = 1; // khởi tạo set count = 1 bắt đầu vòng chơi mới
                     et_ketQuaNguoi.setText(String.valueOf(0));
                     et_ketQuaMay.setText(String.valueOf(0));

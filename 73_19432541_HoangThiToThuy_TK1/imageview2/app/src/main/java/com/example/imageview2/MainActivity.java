@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setElements(); // Initialize function
-        long duration = TimeUnit.MINUTES.toMillis(1); // Initialize timer duration - 1 Minute
+        long duration = TimeUnit.MINUTES.toMillis(1); // sử dụng 1 phút
 
         bt_chiabai.setOnClickListener(new View.OnClickListener() {
             @Override
