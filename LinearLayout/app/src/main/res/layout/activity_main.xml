@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal"
+    android:weightSum="10"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!-- 2-3-4-1-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:background="#ff0"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="1"
+            android:textSize="40sp"
+            android:background="#ff0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="2"
+            android:textSize="40sp"
+            android:background="#8C8C11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+  <!-- <TextView
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/textView"
+        android:textSize="30sp"
+        android:background="#ff0"
+        android:textColor="#ED1D0E"
+        android:text="Android"/>
+    -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#DFB6E8"
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#EBA9F3"
+            android:text="7"
+            android:textSize="40sp" />
+
+        <TextView
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="6"
+        android:textSize="40sp"
+        android:background="#943CA8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="5"
+        android:textSize="40sp"
+        android:background="#592B6A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!--  <TextView
+           android:layout_weight="3"
+           android:id="@+id/textView2"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:textSize="30sp"
+           android:background="#00FFE1"
+           android:textColor="#252323"
+           android:text="PHP" />
+   -->
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:background="#ED8463"
+        android:layout_weight="4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <TextView
+
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="6"
+            android:textSize="40sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="7"
+            android:textSize="40sp"
+            android:background="#F6B19B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+   <!-- <TextView
+        android:layout_weight="4"
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textSize="30sp"
+        android:background="#F378FB"
+        android:textColor="#ED2222"
+        android:text="Java" />
+
+-->
+
+
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textSize="30sp"
+        android:background="#13328C"
+        android:textColor="#E3E5EC"
+        android:text="NodeJS" />
+</LinearLayout>
