@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Module2_2_Bai3_ListView</string>
+    <string-array name="hoten_array">
+        <item>Hoàng Thị Tố Thùy </item>
+        <item>Hồ Huyền Thanh</item>
+        <item>Trần Văn A</item>
+        <item>Nguyễn Thị B</item>
+    </string-array>
+</resources>

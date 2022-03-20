@@ -63,8 +63,7 @@ public class MainActivity extends AppCompatActivity {
         dv_List = getResources().getStringArray(R.array.donvi_list);
         adapterDonvi = new ArrayAdapter<>(this,
                 android.R.layout.simple_list_item_1, dv_List);
-        sp_DonVi.setAdapter(adapterDonvi);
-        sp_DonVi.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        sp_DonVi.setAdapter(adapterDonvi);sp_DonVi.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 donVi = dv_List[i];
